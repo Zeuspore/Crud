@@ -14,7 +14,7 @@ class PostCreateView(generic.CreateView):
     fields = "__all__"
     success_url = reverse_lazy("blog:all")
     
-class PostDetailView(generic.DeleteView):
+class PostDetailView(generic.DetailView):
     model = Post
     
 class PostUpdateView(generic.UpdateView):
